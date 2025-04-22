@@ -54,7 +54,9 @@ const GenreInfo = () => {
           </li>
         ))}
       </ul>
-      <p className="bg-slate-800 text-white p-2">{descriptions[genreIndex]}</p>
+      <p className="bg-slate-800 text-white p-2">
+        {genreIndex >= 0 ? descriptions[genreIndex] : "Click a genre above to view more details."}
+      </p>
     </div>
   );
 };
