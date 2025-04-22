@@ -1,11 +1,15 @@
-import Header from "./header";
+import Header from "./components/Header";
+import ListGroup from "./components/ListGroup";
 import "./App.css";
+import GenreInfo from "./components/GenreInfo";
 
 function App() {
   return (
-    <header>
-      <Header name="Joe" age={25}></Header>
-    </header>
+    <>
+      <Header name="Joe" age={25} />
+      <ListGroup />
+      <GenreInfo />
+    </>
   );
 }
 
