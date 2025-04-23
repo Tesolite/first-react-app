@@ -47,6 +47,7 @@ const GenreInfo = () => {
       <ul className="flex flex- gap-4 bg-slate-900 px-2 text-white">
         {genres.map((genre, index) => (
           <li
+            key={index}
             onClick={() => setGenreIndex(index)}
             className={`p-4 cursor-pointer ${genres[genreIndex] === genre ? "bg-slate-950" : "bg-inherit"}`}
           >
