@@ -2,7 +2,7 @@
   "name": "first-react-app",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://pavkodev.github.io/first-react-app",
+  "homepage": "https://pavkodev.github.io/",
   "type": "module",
   "scripts": {
     "dev": "vite",
