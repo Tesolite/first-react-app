@@ -1,4 +1,4 @@
-import Header from "./components/Header";
+import HeaderComponent from "./components/HeaderComponent";
 import ListGroup from "./components/ListGroup";
 import "./App.css";
 import GenreInfo from "./components/GenreInfo";
@@ -8,10 +8,10 @@ import HeadingComponent from "./components/HeadingComponent";
 function App() {
   return (
     <>
-      <Header name="Joe" age={25} />
+      <HeaderComponent name="Joe" age={25} />
       <ListGroup />
       <GenreInfo />
-      <HeadingComponent heading={"Top Anime"} />
+      <HeadingComponent heading={"Top Rated Anime"} />
       <TopThree url={"https://api.jikan.moe/v4/top/anime?type=tv"} />
     </>
   );
