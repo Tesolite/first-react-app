@@ -21,12 +21,14 @@ const TopThree = (props: { url: string }) => {
           throw new Error("ERROR FETCHING URL");
         }
         const json = await response.json();
-        json.data.forEach((datum) => {
-          setData((data) => [
-            ...data,
-            { image: datum.images.webp.image_url, name: datum.title, rating: datum.score },
-          ]);
-        });
+        json.data.forEach(
+          (datum: { images: { webp: { image_url: string } }; title: string; score: string }) => {
+            setData((data) => [
+              ...data,
+              { image: datum.images.webp.image_url, name: datum.title, rating: datum.score },
+            ]);
+          }
+        );
         setLoading(false);
       } catch (error) {
         console.error(error);
